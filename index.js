@@ -1,13 +1,16 @@
 const Calculate = {
-    factorial(inputNum) {
-        if(inputNum === 0){
-            return 1;
-        }    
-        for(let i = inputNum - 1; i >= 1; i--){
-            inputNum *= i;
+    factorial(num) { 
+        for(let i = num - 1; i >= 1; i--){
+            num *= i;
         }
-        return inputNum;
+        return num;
+
+        if(num === 0){
+            return 1;
+        }   
     }
 };
+
+//console.log(Calculate.factorial(5));
 
 module.exports = Calculate;
